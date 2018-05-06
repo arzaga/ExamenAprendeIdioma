@@ -3,16 +3,44 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Aprende!!</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3>Aprende un Idioma</h3>
+<!-- <ion-item>
+  <ion-range [(ngModel)]="brightness">
+    <ion-icon range-left small name="sunny"></ion-icon>
+    <ion-icon range-right name="sunny"></ion-icon>
+  </ion-range>
+</ion-item> -->
+<ion-item class="cards-bg">
+  <ion-card>
+    <img src="/assets/imgs/IdiomasMenu.png" alt=""/>
+      <ion-card-title>
+        ¿Quieres aprender?
+      </ion-card-title>
+      <ion-card-content>
+        Inicia seleccionando un idioma!!
+    </ion-card-content>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    <ion-row text-center>
+      <ion-col>
+      <button ion-button clear small color="danger" [navPush]="BotonIngles">Inglés</button>
+      </ion-col>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+      <ion-col>
+        <button ion-button clear small color="danger" [navPush]="BotonEspanol">Español</button>
+      </ion-col>
+      <ion-col>
+            <button ion-button clear small color="danger" [navPush]="BotonItaliano">Italiano</button>
+      </ion-col>
+
+</ion-row>
+
+</ion-card>
+
+</ion-item>
+
 </ion-content>

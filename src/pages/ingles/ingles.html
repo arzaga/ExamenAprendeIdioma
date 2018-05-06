@@ -1,0 +1,214 @@
+<!--
+  Generated template for the InglesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Inglés</ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top text-center>
+    <ion-segment [(ngModel)]="inglesVerbos">
+      <ion-segment-button value="verbos">
+      Verbos
+      </ion-segment-button>
+      <ion-segment-button value="pronombres">
+      Pronombres
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<!-- VERBOS -->
+<ion-content text-center>
+  <div [ngSwitch]="inglesVerbos">
+    <!-- PRESENTE!! -->
+    <ion-list *ngSwitchCase="'verbos'" text-center>
+        <ion-slides pager>
+
+          <ion-slide style="background-color: green">
+            <!-- Inicia el item que va dentro de cada slide -->
+
+          <a style="text-decoration:none" title="BotonIrregulares" [navPush]="BotonIrregulares">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/ingles/irregulares.jpg" alt="BotonIrregulares">
+              </ion-thumbnail>
+              <h2>Irregulares</h2>
+            </ion-item>
+          </a>
+
+          </ion-slide>
+
+          <ion-slide style="background-color: green">
+            <!-- Inicia el item que va dentro de cada slide -->
+          <a style="text-decoration:none" title="BotonTobe" [navPush]="BotonTobe">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/ingles/tobe.jpg" alt="BotonTobe">
+              </ion-thumbnail>
+              <h2>To Be</h2>
+            </ion-item>
+          </a>
+          </ion-slide>
+
+          <ion-slide style="background-color: green">
+            <!-- Inicia el item que va dentro de cada slide -->
+          <a style="text-decoration:none" title="BotonIng" [navPush]="BotonIng">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/ingles/ing.jpg" alt="BotonIng">
+              </ion-thumbnail>
+              <h2>ING</h2>
+            </ion-item>
+          </a>
+          </ion-slide>
+
+        </ion-slides>
+              Presente
+    </ion-list>
+<!-- PASADO!! -->
+    <ion-list *ngSwitchCase="'verbos'" text-center>
+        <ion-slides pager>
+
+          <ion-slide style="background-color: green">
+            <!-- Inicia el item que va dentro de cada slide -->
+            <a style="text-decoration:none" title="BotonPasadosimple" [navPush]="BotonPasadosimple">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/ingles/pasadosimple.jpg" >
+              </ion-thumbnail>
+              <h2>Pasado Simple </h2>
+            </ion-item>
+          </a>
+          </ion-slide>
+
+          <ion-slide style="background-color: blue">
+            <!-- Inicia el item que va dentro de cada slide -->
+            <a style="text-decoration:none" title="BotonPasadocontinuo" [navPush]="BotonPasadocontinuo">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/ingles/pasadocontinuo.jpg" >
+              </ion-thumbnail>
+              <h2>Pasado Continuo </h2>
+            </ion-item>
+          </a>
+          </ion-slide>
+
+          <ion-slide style="background-color: red">
+            <!-- Inicia el item que va dentro de cada slide -->
+            <a style="text-decoration:none" title="BotonPasadoperfecto" [navPush]="BotonPasadoperfecto">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/ingles/pasadoperfecto.png">
+              </ion-thumbnail>
+              <h2>Pasado Perfecto </h2>
+            </ion-item>
+          </a>
+          </ion-slide>
+
+        </ion-slides>
+                          Pasado
+    </ion-list>
+<!-- FUTURO!! -->
+<ion-list *ngSwitchCase="'verbos'" text-center>
+    <ion-slides pager>
+
+      <ion-slide style="background-color: green">
+        <!-- Inicia el item que va dentro de cada slide -->
+        <a style="text-decoration:none" title="BotonFutursimple" [navPush]="BotonFutursimple">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/ingles/futurosimple.png">
+          </ion-thumbnail>
+          <h2>Futuro Simple </h2>
+        </ion-item>
+      </a>
+      </ion-slide>
+
+      <ion-slide style="background-color: blue">
+        <!-- Inicia el item que va dentro de cada slide -->
+        <a style="text-decoration:none" title="BotonFuturocontinuo" [navPush]="BotonFuturocontinuo">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/ingles/futurocontinuo.png">
+          </ion-thumbnail>
+          <h2>Futuro Continuo </h2>
+        </ion-item>
+      </a>
+      </ion-slide>
+
+      <ion-slide style="background-color: red">
+        <!-- Inicia el item que va dentro de cada slide -->
+        <a style="text-decoration:none" title="BotonFuturogoingto" [navPush]="BotonFuturogoingto">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/ingles/futurogoingto.jpg">
+          </ion-thumbnail>
+          <h2>Futuro Going To </h2>
+        </ion-item>
+      </a>
+      </ion-slide>
+
+    </ion-slides>
+          Futuro
+</ion-list>
+  </div>
+  <!-- PRONOMBRES -->
+  <br>
+  <div [ngSwitch]="inglesVerbos">
+    <ion-list *ngSwitchCase="'pronombres'">
+
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                ESPAÑOL
+                <!-- ESPAÑOL -->
+                  <ion-card>
+                <p>Yo</p>
+                <p>Tu, Usted</p>
+                <p>El</p>
+                <p>Ella</p>
+                <p>Eso</p>
+                <p>Nosotros/as</p>
+                <p>Ustedes</p>
+                <p>Ellos/as</p>
+                  </ion-card>
+              </ion-col>
+                <ion-col>
+                  INGLÉS
+                  <!-- INGLÉS -->
+                  <ion-card>
+                    <p>I</p>
+                    <p>You</p>
+                    <p>He</p>
+                    <p>She</p>
+                    <p>It</p>
+                    <p>We</p>
+                    <p>You</p>
+                    <p>They</p>
+                  </ion-card>
+                </ion-col>
+
+                <ion-col>
+                  PRONUNCIACIÓN
+                  <!-- PRONUNCIACION -->
+                  <ion-card>
+                    <p>ái</p>
+                    <p>iú</p>
+                    <p>jí</p>
+                    <p>xí</p>
+                    <p>it</p>
+                    <p>uí</p>
+                    <p>iú</p>
+                    <p>déi</p>
+                  </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </ion-list>
+  </div>
+</ion-content>
